@@ -1,0 +1,38 @@
+{
+  "arch": "VAI-ISA-1",
+  "word_size": 32,
+  "endianness": "little",
+  "registers": {
+    "general": ["r0","r1","r2","r3","r4","r5","r6","r7"],
+    "control": ["pc","sp","lr"],
+    "flags": ["zf","cf","sf","of"]
+  },
+  "instructions": [
+    {"op": "NOP",  "code": 0,  "args": 0, "desc": "No operation"},
+    {"op": "MOV",  "code": 1,  "args": 2, "desc": "Move value to register"},
+    {"op": "ADD",  "code": 2,  "args": 3, "desc": "Add two registers"},
+    {"op": "SUB",  "code": 3,  "args": 3, "desc": "Subtract registers"},
+    {"op": "MUL",  "code": 4,  "args": 3, "desc": "Multiply registers"},
+    {"op": "DIV",  "code": 5,  "args": 3, "desc": "Divide registers"},
+    {"op": "AND",  "code": 6,  "args": 3, "desc": "Bitwise AND"},
+    {"op": "OR",   "code": 7,  "args": 3, "desc": "Bitwise OR"},
+    {"op": "XOR",  "code": 8,  "args": 3, "desc": "Bitwise XOR"},
+    {"op": "NOT",  "code": 9,  "args": 2, "desc": "Bitwise NOT"},
+    {"op": "SHL",  "code": 10, "args": 3, "desc": "Shift left"},
+    {"op": "SHR",  "code": 11, "args": 3, "desc": "Shift right"},
+    {"op": "CMP",  "code": 12, "args": 2, "desc": "Compare registers, set flags"},
+    {"op": "JMP",  "code": 13, "args": 1, "desc": "Unconditional jump"},
+    {"op": "JEQ",  "code": 14, "args": 1, "desc": "Jump if equal (ZF=1)"},
+    {"op": "JNE",  "code": 15, "args": 1, "desc": "Jump if not equal (ZF=0)"},
+    {"op": "JLT",  "code": 16, "args": 1, "desc": "Jump if less than (SF=1)"},
+    {"op": "JGT",  "code": 17, "args": 1, "desc": "Jump if greater than"},
+    {"op": "LOAD", "code": 18, "args": 2, "desc": "Load from memory address"},
+    {"op": "STOR", "code": 19, "args": 2, "desc": "Store to memory address"},
+    {"op": "PUSH", "code": 20, "args": 1, "desc": "Push register to stack"},
+    {"op": "POP",  "code": 21, "args": 1, "desc": "Pop stack to register"},
+    {"op": "CALL", "code": 22, "args": 1, "desc": "Call subroutine"},
+    {"op": "RET",  "code": 23, "args": 0, "desc": "Return from subroutine"},
+    {"op": "SYS",  "code": 24, "args": 1, "desc": "System call"},
+    {"op": "HALT", "code": 255,"args": 0, "desc": "Halt execution"}
+  ]
+}
