@@ -1,0 +1,43 @@
+{
+  "default_values": {
+    "battery": {
+      "level": 0.85,
+      "charging": false,
+      "voltage_v": 3.85
+    },
+    "temperature": {
+      "cpu_c": 38.0,
+      "battery_c": 32.0,
+      "ambient_c": 25.0
+    },
+    "gps": {
+      "lat": 0.0,
+      "lon": 0.0,
+      "alt_m": 0.0,
+      "fix": false
+    },
+    "accelerometer": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 9.81
+    },
+    "gyroscope": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "proximity": {
+      "distance_cm": 10.0,
+      "near": false
+    },
+    "ambient_light": {
+      "lux": 300.0
+    }
+  },
+  "thresholds": {
+    "temperature.cpu_c.warning": 75.0,
+    "temperature.cpu_c.critical": 90.0,
+    "battery.level.low": 0.15,
+    "battery.level.critical": 0.05
+  }
+}

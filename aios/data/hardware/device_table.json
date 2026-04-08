@@ -1,0 +1,49 @@
+{
+  "devices": [
+    {
+      "name": "firmware",
+      "type": "firmware",
+      "driver": "vaios_fw"
+    },
+    {
+      "name": "cpu",
+      "type": "processor",
+      "driver": "vaios_cpu"
+    },
+    {
+      "name": "memory",
+      "type": "ram",
+      "driver": "vaios_mem"
+    },
+    {
+      "name": "storage",
+      "type": "storage",
+      "driver": "vaios_emmc"
+    },
+    {
+      "name": "nic",
+      "type": "network",
+      "driver": "vaios_nic"
+    },
+    {
+      "name": "display",
+      "type": "display",
+      "driver": "vaios_dsp"
+    },
+    {
+      "name": "io",
+      "type": "input",
+      "driver": "vaios_io"
+    },
+    {
+      "name": "sensors",
+      "type": "sensors",
+      "driver": "vaios_sns"
+    },
+    {
+      "name": "radio",
+      "type": "radio",
+      "driver": "vaios_rad"
+    }
+  ]
+}

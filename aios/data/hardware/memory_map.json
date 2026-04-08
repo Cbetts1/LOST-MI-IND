@@ -1,0 +1,25 @@
+{
+  "total_mb": 4096,
+  "zones": {
+    "system": {
+      "start_mb": 256,
+      "size_mb": 512
+    },
+    "user": {
+      "start_mb": 768,
+      "size_mb": 3264
+    },
+    "dma": {
+      "start_mb": 3840,
+      "size_mb": 128
+    },
+    "tee": {
+      "start_mb": 3968,
+      "size_mb": 64
+    },
+    "reserved": {
+      "start_mb": 4032,
+      "size_mb": 64
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "cellular": {
+    "standard": "LTE/5G",
+    "bands": [
+      700,
+      850,
+      1900,
+      2100,
+      2600,
+      3500
+    ],
+    "default_freq_mhz": 2100.0,
+    "max_dl_mbps": 2000,
+    "max_ul_mbps": 200
+  },
+  "wifi": {
+    "standard": "802.11ax (WiFi 6)",
+    "bands_ghz": [
+      2.4,
+      5.0,
+      6.0
+    ],
+    "default_freq_mhz": 5180.0,
+    "max_mbps": 9608
+  },
+  "bluetooth": {
+    "version": "5.2",
+    "default_freq_mhz": 2402.0,
+    "profiles": [
+      "A2DP",
+      "HFP",
+      "HID",
+      "GATT",
+      "LE Audio"
+    ]
+  }
+}

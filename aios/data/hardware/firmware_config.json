@@ -1,0 +1,25 @@
+{
+  "firmware_version": "VAIOS-FW-1.0",
+  "build_date": "2026-04-08",
+  "arch": "ARM64",
+  "secure_boot": true,
+  "tee_region_mb": 64,
+  "boot_devices": [
+    "storage",
+    "network"
+  ],
+  "capabilities": {
+    "virtualization": true,
+    "crypto_accel": true,
+    "trusted_platform": true,
+    "secure_enclave": true
+  },
+  "memory_map": {
+    "rom_start": "0x00000000",
+    "rom_size_mb": 4,
+    "ram_start": "0x10000000",
+    "ram_size_mb": 4096,
+    "tee_start": "0xF0000000",
+    "tee_size_mb": 64
+  }
+}

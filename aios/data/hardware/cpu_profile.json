@@ -1,0 +1,28 @@
+{
+  "arch": "ARM64",
+  "num_cores": 4,
+  "freq_ghz": 2.4,
+  "cache_l1_kb": 64,
+  "cache_l2_kb": 512,
+  "cache_l3_mb": 4,
+  "isa_extensions": [
+    "NEON",
+    "SVE",
+    "CRYPTO",
+    "CRC32"
+  ],
+  "power_profiles": {
+    "performance": {
+      "freq_ghz": 2.4,
+      "voltage_v": 1.0
+    },
+    "balanced": {
+      "freq_ghz": 1.8,
+      "voltage_v": 0.9
+    },
+    "powersave": {
+      "freq_ghz": 0.6,
+      "voltage_v": 0.75
+    }
+  }
+}
